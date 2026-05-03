@@ -21,7 +21,7 @@ public class PlayerMovement : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
 
-        // start in first person
+        
         firstPersonCamera.SetActive(true);
         thirdPersonCamera.SetActive(false);
     }
@@ -35,20 +35,19 @@ public class PlayerMovement : MonoBehaviour
 
     void HandleMovement()
     {
-        // get WASD input
+    
         float moveX = Keyboard.current.aKey.isPressed ? -1f :
                       Keyboard.current.dKey.isPressed ?  1f : 0f;
         float moveZ = Keyboard.current.wKey.isPressed ?  1f :
                       Keyboard.current.sKey.isPressed ? -1f : 0f;
 
-        // move relative to where player is facing
         Vector3 move = transform.right * moveX + transform.forward * moveZ;
         transform.position += move * moveSpeed * Time.deltaTime;
     }
 
     void HandleMouseLook()
     {
-        // get mouse input
+        //for mouse input
         float mouseX = Mouse.current.delta.x.ReadValue() * mouseSensitivity;
         float mouseY = Mouse.current.delta.y.ReadValue() * mouseSensitivity;
 
