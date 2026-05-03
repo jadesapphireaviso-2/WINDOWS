@@ -1,3 +1,7 @@
+# This .gitignore file should be placed at the root of your Unity project.
+#
+# GitHub's Unity .gitignore template
+#
 [Ll]ibrary/
 [Tt]emp/
 [Oo]bj/
@@ -5,3 +9,54 @@
 [Bb]uilds/
 [Ll]ogs/
 [Mm]emoryCaptures/
+
+# Asset meta files may be included in source control, but information about local configuration should be ignored
+/[Aa]ssets/[Tt]extMesh\ [Pp]ro/
+/[Aa]ssets/[Tt]extMesh\ [Pp]ro.meta
+
+# User-specific files
+[Vv]isual[Ss]tudio.x64.debug
+[Vv]isual[Ss]tudio.x64.release
+[Vv]isual[Ss]tudio.xtrace
+[Vv]isual[Ss]tudio.queries
+*.csproj
+*.unityproj
+*.sln
+*.slnx
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.opendb
+*.VC.db
+
+# Unity3D generated meta files
+*.pidb.meta
+*.pdb.meta
+*.mdb.meta
+
+# Unity3D Generated File On Crash Reports
+sysinfo.txt
+
+# Builds
+*.apk
+*.unitypackage
+*.bundle
+
+# Crashlytics generated file
+crashlytics-build.properties
+
+# OS generated
+.DS_Store
+.[Tt]humbs.db
+Icon?
+
+# User Settings
+UserSettings/
+
+# VS Code
+.vscode/
