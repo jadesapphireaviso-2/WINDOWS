@@ -3,6 +3,11 @@ using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
+
+    //TESTING CODE
+    
+    
+
     [Header("Movement")]
     [SerializeField] float moveSpeed = 5f;
 
@@ -24,6 +29,11 @@ public class PlayerMovement : MonoBehaviour
         
         firstPersonCamera.SetActive(true);
         thirdPersonCamera.SetActive(false);
+
+        //testing codes
+        // TEMP - press K to activate key for testing
+        if (Keyboard.current.kKey.wasPressedThisFrame)
+            FindFirstObjectByType<Key>().ActivateKey();
     }
 
     private void Update()
